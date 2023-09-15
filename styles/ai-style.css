@@ -1,0 +1,93 @@
+body {
+    margin: 0;
+    overflow: hidden;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+    overflow: hidden;
+    position: relative;
+}
+
+.shape {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    border-radius: 50%;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+#shape1 {
+    background-color: #3498db;
+    animation-name: moveShape1;
+}
+
+#shape2 {
+    background-color: #b453b4;
+    animation-name: moveShape2;
+}
+
+.text {
+    font-size: 24px;
+    font-weight: bold;
+    color: #3498db;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+#changingText {
+    animation-name: changeTextColor;
+}
+
+p {
+    text-align: center;
+    max-width: 500px;
+}
+
+@keyframes moveShape1 {
+
+    0%,
+    100% {
+        left: -100px;
+        transform: scale(1);
+    }
+
+    50% {
+        left: calc(50% - 50px);
+        transform: scale(1.5);
+    }
+}
+
+@keyframes moveShape2 {
+
+    0%,
+    100% {
+        left: 100%;
+        transform: scale(1);
+    }
+
+    50% {
+        left: calc(50% - 50px);
+        transform: scale(0.5);
+    }
+}
+
+@keyframes changeTextColor {
+
+    0%,
+    100% {
+        color: #3498db;
+    }
+
+    50% {
+        color: #e73cb7;
+    }
+}

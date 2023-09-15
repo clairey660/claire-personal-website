@@ -1,0 +1,114 @@
+body {
+    background:
+        url("../images/frog3.png");
+    background-color: #d4bbf6;
+    color: black !important;
+    background-repeat: repeat;
+    background-size: 20%;
+    background-position: center;
+}
+
+img {
+    z-index: 10;
+    float: left;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+    width: 80px;
+
+}
+
+h1 {
+    display: inline-block;
+    padding-top: 15%;
+    line-height: 0.5em;
+    font-size: 150px;
+    font-weight: 300;
+    background-color: #d4bbf6;
+}
+
+h2 {
+
+    position: relative;
+    width: fit-content;
+    border: 5px solid;
+    margin: auto;
+    font-size: 100px;
+    font-weight: 200;
+    padding: 10px;
+    background-color: #d4bbf6;
+}
+
+h3 {
+    position: relative;
+    padding: .6em 30%;
+    width: 40%;
+    font-size: 40px;
+    font-weight: 400;
+
+    background-color: #d4bbf6;
+}
+
+button {
+    position: relative;
+    float: right;
+    width: fit-content;
+    background-color: transparent;
+    border: transparent;
+}
+
+br {
+    display: block;
+    margin: 250px 0;
+    content: " ";
+}
+
+p {
+    display: inline-block;
+    background-color: #d4bbf6;
+    padding-right: 5%;
+    padding-left: 5%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+.container {
+    display: flex;
+    text-align: center;
+}
+
+.resize {
+    width: 90%;
+    height: auto;
+}
+
+
+
+.nav {
+    background-color: #d4bbf6d3;
+    position: relative;
+    top: 0%;
+    display: block;
+    width: 100%;
+    overflow: hidden;
+}
+
+.nav a {
+    float: right;
+    display: block;
+    color: black;
+    font-weight: 600;
+    text-align: center;
+    text-shadow: rgb(241, 222, 255) 1px 0 10px;
+    padding: 30px 40px;
+    text-decoration: none;
+    background-color: transparent;
+}
+
+.nav a:hover {
+    color: #ffdeff;
+}
+
+.nav a.active {
+    color: hsl(101, 100%, 90%);
+}
